@@ -1,0 +1,129 @@
+/* import  */
+@import './color.css';
+@import './fonts.css';
+
+html, body {
+	
+	background-color: var(--gray-900);
+}
+/* Style Login */
+#login-items {
+	height: 100%;
+	display: grid;
+	place-items: center;
+    margin-top: 15%;
+}
+.login-box {
+	width:360px;
+	margin: auto;
+    background-color: var(--white);
+ 
+    border-radius: 14px;
+}
+#login-items form{
+    padding-inline:35px;
+}
+#login-items .login-box .title{
+    font-size:20px;
+    color: var(--dark);
+    font-weight: 500;
+    margin-block: 32px;
+}
+.floated-label {
+	position: relative;
+	margin-top: 32px;
+}
+body select.form-control, body input.form-control, body textarea.form-control {
+	border-color: var(--gray-200);
+	background: transparent;
+    font-weight: 900;
+   
+}
+input.form-control {
+	height: 50px;
+	color: var(--dark);
+	font-size: 14px;
+	border-radius: 15px;
+	border: solid 1px var(--gray-200);
+	padding: 8px 12px;
+    font-family: "IranYekanFarsiNumbers" !important;
+    text-align: end;
+}
+.floated-label label {
+	top: 9px;
+	position: absolute;
+	right: 12px;
+	color: var(--gray-300);
+	font-size: 14px;
+	transition: 0.2s;
+	transform: translateY(0);
+	pointer-events: none;
+}
+.form-control:focus {
+	color: var(--gray-300);
+	background-color: transparent;
+	border-color: var(--gray-200);
+	outline: none;
+	box-shadow: none;
+}
+.floated-label input:focus+label,
+.floated-label input:not(:placeholder-shown)+label {
+    font-size: 12px;
+    color: var(--gray-300);
+    background-color:var(--white);
+    display: block;
+    padding: 0 4px;
+    transform: translate(-8px, -21px);
+}
+#login-items .login-box .form-check{
+    margin-block: 16px;
+}
+#login-items .login-box .form-check .form-check-input {
+	float: right;
+	margin-left: 0;
+} 
+#login-items .login-box .form-check .form-check-label{
+    font-size: 13px;
+    color: var(--gray-300);
+    margin-right: 10px;
+}
+#login-items .login-box .login-button{
+    background-color: var(--blue);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--white);
+    padding-inline: 48px;
+    padding-block: 8px;
+    margin-top: 40px;
+}
+#login-items .login-box .no-account-box {
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+#login-items .login-box .no-account-box .text-no-account{
+    color: var(--gray-300);
+    font-size: 14px;
+    font-weight: 600;
+}
+#login-items .login-box .no-account-box .sign-link{
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+#login-items .login-box .box{
+    background-color: var(--white-100);
+    padding-block: 10px;
+    border-radius: 0px 0px 14px 14px;
+}
+#login-items .login-box .box .text-box{
+
+    font-size: 12px;
+    color: var(--gray-300);
+    margin-right: 15px;
+  
+}
+
+
+
