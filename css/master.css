@@ -14,20 +14,20 @@ html, body {
     margin-top: 15%;
 }
 .login-box {
-	width:360px;
+    width: clamp(320px, 90%, 360px);
 	margin: auto;
     background-color: var(--white);
  
     border-radius: 14px;
 }
 #login-items form{
-    padding-inline:35px;
+    padding-inline:48px;
 }
 #login-items .login-box .title{
-    font-size:20px;
+    font-size:14px;
     color: var(--dark);
-    font-weight: 500;
-    margin-block: 32px;
+    font-weight: 900;
+    margin-block: 64px 16px ;
 }
 .floated-label {
 	position: relative;
@@ -50,7 +50,7 @@ input.form-control {
     text-align: end;
 }
 .floated-label label {
-	top: 9px;
+	top: 13px;
 	position: absolute;
 	right: 12px;
 	color: var(--gray-300);
@@ -68,7 +68,7 @@ input.form-control {
 }
 .floated-label input:focus+label,
 .floated-label input:not(:placeholder-shown)+label {
-    font-size: 12px;
+    font-size: 10px;
     color: var(--gray-300);
     background-color:var(--white);
     display: block;
@@ -81,11 +81,13 @@ input.form-control {
 #login-items .login-box .form-check .form-check-input {
 	float: right;
 	margin-left: 0;
+    background-color: #ddd;
+    border: none;
 } 
 #login-items .login-box .form-check .form-check-label{
-    font-size: 13px;
+    font-size: 12px;
     color: var(--gray-300);
-    margin-right: 10px;
+    margin-right: 6px;
 }
 #login-items .login-box .login-button{
     background-color: var(--blue);
@@ -103,7 +105,7 @@ input.form-control {
 }
 #login-items .login-box .no-account-box .text-no-account{
     color: var(--gray-300);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 #login-items .login-box .no-account-box .sign-link{
@@ -114,8 +116,9 @@ input.form-control {
 }
 #login-items .login-box .box{
     background-color: var(--white-100);
-    padding-block: 10px;
+    padding: 10px 16px;
     border-radius: 0px 0px 14px 14px;
+
 }
 #login-items .login-box .box .text-box{
 
